@@ -1,4 +1,5 @@
-#pragma once
+#ifndef Caracter_00_CCaracter_H
+#define Caracter_00_CCaracter_H
 #include "Tipos.h"
 #include <iostream>
 using namespace System;
@@ -20,3 +21,4 @@ public:
 
 };
 
+#endif
