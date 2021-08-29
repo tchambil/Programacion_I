@@ -20,7 +20,7 @@ CCaracter::~CCaracter()
 }
 void CCaracter::borrar()
 {
-	Console::SetCursorPosition(m_PosX, m_PosY);
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY);
 	cout << " ";
 
 }
@@ -33,6 +33,6 @@ void CCaracter::desplazar()
 }
 void CCaracter::dibujar()
 {
-	Console::SetCursorPosition(m_PosX, m_PosY);
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY);
 	cout << (char)2;
 }

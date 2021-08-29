@@ -1,5 +1,14 @@
 #include "CCirculo.h"
 
+#include <iostream>
+
+
+CCirculo::~CCirculo()
+{
+
+	cout<< "\nDestruyendo objeto. \n";
+
+}
 CCirculo::CCirculo(decimal radio)
 {
 	this->radio = radio;

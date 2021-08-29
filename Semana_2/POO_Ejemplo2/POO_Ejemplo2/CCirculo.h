@@ -2,7 +2,7 @@
 #ifndef CIRCULO_00_CCIRCULO_H
 #define CIRCULO_00_CCIRCULO_H
 #include "Tipos.h"
-
+using namespace std;
 class CCirculo
 {
 private:
@@ -10,6 +10,7 @@ private:
 	const decimal PI = 3.1416;
 public:
 	CCirculo(decimal radio);
+	~CCirculo();
 	CCirculo(decimal radio,decimal valor);
 	CCirculo(decimal radio, decimal valor, decimal valor2);
 	tipoArea  area();
