@@ -1,5 +1,7 @@
 
 #include <iostream>
+#include <vector>
+
 #include "CPunto2D.h"
 int main()
 {/*
@@ -31,6 +33,7 @@ int main()
 	delete ptrP3;
 	*/
 	//Arreglo dinámico de objetos
+	/*
 	CPunto2D* ptrPuntos = new CPunto2D[5];
 	ptrPuntos[0] = CPunto2D(5, 4);
 	ptrPuntos[1] = CPunto2D(6, 2);
@@ -59,10 +62,40 @@ int main()
 	}
 	delete ptrPuntos2;
 	ptrPuntos2 = nullptr;
+	*/
+	//¿Existe alguna alternativa? ---> usando vector de c++
+	/*
+	vector<CPunto2D> puntos;
+	puntos = {
+		CPunto2D(5, 4),
+		CPunto2D(6, 2),
+		 CPunto2D(1, 1),
+		CPunto2D(3, 1),
+		 CPunto2D(2, 2)
+	};
+	for (auto i =0; i= puntos.size();i++)
+	{
+		//TODO
+	}
+	*/
 
+	CPunto2D** puntos = nullptr;
+	puntos = new CPunto2D * [5];
+	puntos[0] = new CPunto2D(5, 4);
+	puntos[1] = new CPunto2D(6, 2);
+	puntos[2] = new CPunto2D(3, 1);
+	puntos[3] = new CPunto2D(1, 1);
+	puntos[4] = new CPunto2D(2, 2);
 
+	for (auto i = 0; i < 5; ++i) {
+		cout << puntos[i]->getX() << ","
+			<< puntos[i]->getY() << endl;
+	}
 
-
+	for (auto i = 0; i < 5; ++i)
+		delete puntos[i];
+	delete[] puntos;
+	puntos = nullptr;
 
 
 
