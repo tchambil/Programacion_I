@@ -3,6 +3,12 @@
 #include <vector>
 
 #include "CPunto2D.h"
+void funcionvariasejecuciones(entero valor)
+{
+	unique_ptr<CPunto2D> obj{ new CPunto2D(5,6) };
+	cout << "Objeto " << valor << endl;
+}
+
 int main()
 {/*
 	CPunto2D p1(5, 2);
@@ -78,7 +84,8 @@ int main()
 		//TODO
 	}
 	*/
-
+	//Se crea un arreglo de 5 punteros
+	/*
 	CPunto2D** puntos = nullptr;
 	puntos = new CPunto2D * [5];
 	puntos[0] = new CPunto2D(5, 4);
@@ -96,8 +103,16 @@ int main()
 		delete puntos[i];
 	delete[] puntos;
 	puntos = nullptr;
-
-
+	*/
+	CPunto2D objeto = CPunto2D(5, 2);
+	CPunto2D* ptrObj = new CPunto2D(5, 2);
+	delete ptrObj;
+	//Punteros inteligentes
+	unique_ptr<CPunto2D> objeto3{ new CPunto2D(5,6) };
+	for(auto i = 0;i<10;i++)
+	{
+		funcionvariasejecuciones(i);
+	}
 
 }
 
