@@ -8,7 +8,7 @@ void funcionvariasejecuciones(entero valor)
 	unique_ptr<CPunto2D> obj{ new CPunto2D(5,6) };
 	cout << "Objeto " << valor << endl;
 }
-
+ 
 int main()
 {/*
 	CPunto2D p1(5, 2);
@@ -109,10 +109,11 @@ int main()
 	delete ptrObj;
 	//Punteros inteligentes
 	unique_ptr<CPunto2D> objeto3{ new CPunto2D(5,6) };
+ 
 	for(auto i = 0;i<10;i++)
 	{
 		funcionvariasejecuciones(i);
 	}
-
+	 
 }
 

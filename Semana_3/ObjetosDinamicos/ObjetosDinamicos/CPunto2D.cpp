@@ -1,17 +1,21 @@
 #include "CPunto2D.h"
+
+#include <iostream> 
+
 CPunto2D::CPunto2D()
 {
-	
+	cout << "Objeto Construido" << endl;
 }
 CPunto2D::CPunto2D(entero x, entero y)
 {
 	this->m_x = x;
 	this->m_y = y;
+	cout << "Objeto Construido" << endl;
 }
 
 CPunto2D::~CPunto2D()
 {
-	
+	cout << "Objeto destruido" << endl;
 }
 entero CPunto2D::getX()
 {
