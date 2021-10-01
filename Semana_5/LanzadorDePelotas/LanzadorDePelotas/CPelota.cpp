@@ -3,7 +3,7 @@
 using namespace System;
 CPelota::CPelota()
 {
-	this->m_X = 1;
+	this->m_X =2;
 	this->m_Y = 20;
 	this->m_DX = 1;
 	this->m_DY = 1;

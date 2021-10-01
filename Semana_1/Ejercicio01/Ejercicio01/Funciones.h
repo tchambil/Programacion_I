@@ -14,5 +14,4 @@ TipoEntero* optOrdenarMayoraMenor(TipoEntero* pLista, size_t* pTamano);
 TipoEntero* HallarMayor(TipoEntero* pLista, size_t* pTamano);
 void optBuscarMayor(TipoEntero* pLista, size_t* pTamano);
 TipoEntero* hallaMenor(TipoEntero* pLista, size_t* pTamano);
-
 void OptBuscarMenor(TipoEntero* pLista, size_t* pTamano);

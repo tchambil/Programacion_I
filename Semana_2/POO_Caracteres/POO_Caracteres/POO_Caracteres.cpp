@@ -18,9 +18,9 @@ int main()
         prtObjeto1->desplazar();
         prtObjeto1->dibujar();
 
-        prtObjeto2->borrar();
+      /*  prtObjeto2->borrar();
         prtObjeto2->desplazar();
-        prtObjeto2->dibujar();
+        prtObjeto2->dibujar();*/
 
 
         _sleep(100);

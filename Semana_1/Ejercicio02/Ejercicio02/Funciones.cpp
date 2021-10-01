@@ -12,7 +12,7 @@ TipoEntero* GenerarLista(size_t& pTamano)
 	cin>> pTamano;
 	pLista = new TipoEntero[pTamano];
 	for (size_t i = 0; i < pTamano; i++) {
-		*(pLista + i) = rand() % 1000;
+		*(pLista + i) = rand() % 20;
 	}
 	return pLista;
 }

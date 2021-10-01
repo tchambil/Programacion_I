@@ -1,7 +1,6 @@
 #include "Menu.h"
 #include "Tipos.h"
 
-
 TipoEntero* GenerarLista(size_t pTamano)
 {
 	srand(time(nullptr));
@@ -107,8 +106,7 @@ TipoEntero* HallarMayor(TipoEntero* pLista, size_t* pTamano)
 			*mayor = pLista[i];
 		}
 	}
-	return mayor;
-	
+	return mayor;	
 }
 void optBuscarMayor(TipoEntero* pLista, size_t* pTamano)
 {

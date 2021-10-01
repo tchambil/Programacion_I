@@ -9,9 +9,27 @@
 // 
 #include "Funciones.h"
 #include "Menu.h" 
-using namespace std; 
-int main()
-{
-	size_t tamano = 10;  
-	EjecutarMenu(tamano);
+using namespace std;
+
+#include<iostream>
+using namespace std;
+
+double* duevuelveDireccion() {
+	double edad = 100;
+	return &edad;
 }
+
+void main()
+{
+	double* recibed;
+	recibed = duevuelveDireccion();
+	cout << "Direccion :" << &recibed << endl;
+	cout << "Valor :" << *recibed << endl;
+
+	//system("pause>>NULL");
+}
+/*int main()
+{
+	//size_t tamano = 10;  
+	//EjecutarMenu(tamano);
+}*/

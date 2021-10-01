@@ -22,17 +22,35 @@ void CCaracter::borrar()
 {
 	Console::SetCursorPosition(this->m_PosX, this->m_PosY);
 	cout << " ";
-
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY+1);
+	cout << " ";
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY + 2);
+	cout << " ";
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY + 3);
+	cout << " ";
 }
 void CCaracter::desplazar()
 {
 	if (m_PosX + m_DesplazaX > 78 || m_PosX < 1)
 		m_DesplazaX = m_DesplazaX * -1;
 	m_PosX = m_PosX + m_DesplazaX;
+	cout << m_PosX<<"," << m_PosY;
 	
 }
 void CCaracter::dibujar()
 {
 	Console::SetCursorPosition(this->m_PosX, this->m_PosY);
-	cout << (char)2;
+	cout << " ___\n";
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY+1);
+	cout << "/o o'\'\n";
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY+2);
+	cout << "|   |\n";
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY+3);
+	cout << "|,,,|\n";
+	Console::SetCursorPosition(this->m_PosX, this->m_PosY+4);
+	//cout << (char)2;
+
+
+	
+
 }
