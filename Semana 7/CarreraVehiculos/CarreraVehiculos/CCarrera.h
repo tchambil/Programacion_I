@@ -4,6 +4,7 @@
 #include "Tipos.h"
 #include "CMoto.h"
 #include "CCoche.h"
+#include "CPersona.h"
 class CCarrera
 {
 
@@ -12,6 +13,7 @@ private:
 	//CCoche* objCoche;
 	shared_ptr<CCoche> ptrCoche;
 	shared_ptr<CMoto> ptrMoto;
+	shared_ptr<CPersona> ptrPersona;
 public:
 	CCarrera();
 	~CCarrera();

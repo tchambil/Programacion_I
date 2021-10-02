@@ -53,6 +53,9 @@
     <ClInclude Include="Tipos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="CPersona.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CarreraVehiculos.cpp">
@@ -83,6 +86,9 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="CCarrera.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="CPersona.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

@@ -131,6 +131,7 @@
     <ClInclude Include="CCoche.h" />
     <ClInclude Include="CHelicoptero.h" />
     <ClInclude Include="CMoto.h" />
+    <ClInclude Include="CPersona.h" />
     <ClInclude Include="CVehiculo.h" />
     <ClInclude Include="CVehiculoAereo.h" />
     <ClInclude Include="CVehiculoTerrestre.h" />
@@ -145,6 +146,7 @@
     <ClCompile Include="CCarrera.cpp" />
     <ClCompile Include="CCoche.cpp" />
     <ClCompile Include="CMoto.cpp" />
+    <ClCompile Include="CPersona.cpp" />
     <ClCompile Include="CVehiculo.cpp" />
     <ClCompile Include="CVehiculoAereo.cpp" />
     <ClCompile Include="CVehiculoTerrestre.cpp" />
