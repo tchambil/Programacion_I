@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CAvion.h" />
+    <ClInclude Include="CCarrera.h" />
     <ClInclude Include="CCoche.h" />
     <ClInclude Include="CHelicoptero.h" />
     <ClInclude Include="CMoto.h" />
@@ -139,6 +140,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CAvion.cpp" />
+    <ClCompile Include="CCoche.cpp" />
     <ClCompile Include="CMoto.cpp" />
     <ClCompile Include="CVehiculo.cpp" />
     <ClCompile Include="CVehiculoAereo.cpp" />

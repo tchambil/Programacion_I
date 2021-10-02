@@ -7,6 +7,7 @@ class CVehiculoAereo :public CVehiculo
 public:
 	CVehiculoAereo(TipoEntero, TipoEntero);
 	~CVehiculoAereo();
+
 };
 
 

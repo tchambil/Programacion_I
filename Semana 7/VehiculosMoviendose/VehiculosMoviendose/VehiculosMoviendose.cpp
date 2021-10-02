@@ -5,6 +5,8 @@
 #include "time.h"
 #include "windows.h"
 #include <memory> 
+#include "CCoche.h"
+#include "CAvion.h"
 using namespace System;
 
 int main()
@@ -15,17 +17,20 @@ int main()
     {
         cout << "\n\n Seleccione un vehiculo\n\n";
         cout << "[M] Moto\n";
+        cout << "[C] Coche\n";
+        cout << "[A] Avion\n";
         do
         {
             cout << "\n\nSeleccione una opcion: ";
             cin >> option;
-        } while ((option != 'M'));
-        if(option !='S')
+        } while ((option != 'M')&& (option != 'C') && (option != 'A'));
+        if (option != 'S')
         {
             switch (option)
             {
             case 'M':
-                shared_ptr<CMoto> ptrMoto = make_shared<CMoto>(5, 7); 
+	            {
+                shared_ptr<CMoto> ptrMoto = make_shared<CMoto>(5, 7);
                 ptrMoto->AsignarCoordenadasXY();
                 Console::Clear();
                 while (!_kbhit())
@@ -34,9 +39,39 @@ int main()
                     ptrMoto->MoverFigura();
                     ptrMoto->MostrarFigura();
                     Sleep(50);
-                } 
-                break; 
-            } 
+                }
+                break;
+	            }
+               
+            case 'C':
+	            {
+                shared_ptr<CCoche> ptrCoche = make_shared<CCoche>(4, 13);
+                ptrCoche->AsignarCoordenadasXY();
+                Console::Clear();
+                while (!_kbhit())
+                {
+                    ptrCoche->BorrarFigura();
+                    ptrCoche->MoverFigura();
+                    ptrCoche->MostrarFigura();
+                    Sleep(50);
+                }
+                break;
+	            }
+            case 'A':
+	            {
+                shared_ptr<CAvion> ptrAvion = make_shared<CAvion>(5, 19);
+                ptrAvion->AsignarCoordenadasXY();
+                Console::Clear();
+                while (!_kbhit())
+                {
+                    ptrAvion->BorrarFigura();
+                    ptrAvion->MoverFigura();
+                    ptrAvion->MostrarFigura();
+                    Sleep(50);
+                }
+                break;
+	            }
+            }
         }
         else
         {
