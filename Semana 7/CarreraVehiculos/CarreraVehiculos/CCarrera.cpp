@@ -26,7 +26,7 @@ CCarrera::~CCarrera()
 void CCarrera::iniciarCarrera()
 {
 	bool hay_ganador = false;
-	TipoEntero ranking[2] = { 0 };
+	//TipoEntero ranking[2] = { 0 };
 	TipoEntero teclado = 0;
 	TipoDecimal posY = 1;
 	TipoDecimal posX = 1;
@@ -44,9 +44,9 @@ void CCarrera::iniciarCarrera()
 		ptrCoche->BorrarFigura();
 		ptrCoche->MoverFigura();
 		ptrCoche->MostrarFigura(); 
-		if(_getch())
+		if (kbhit())
 		{
-			TipoCaracter tecla = _getch(); 
+			
 			switch ((teclado = getch())) {
 			case KEY_UP:
 				posY -= 1; 
