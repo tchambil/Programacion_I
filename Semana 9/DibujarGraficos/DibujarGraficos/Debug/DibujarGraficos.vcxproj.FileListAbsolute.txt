@@ -1,0 +1,4 @@
+C:\Users\anton\source\repos\DibujarGraficos\DibujarGraficos\Debug\DibujarGraficos.vcxproj.AssemblyReference.cache
+C:\Users\anton\source\repos\DibujarGraficos\DibujarGraficos\Debug\DibujarGraficos.MyForm.resources
+C:\Users\anton\source\repos\DibujarGraficos\DibujarGraficos\Debug\DibujarGraficos.vcxproj.GenerateResource.cache
+C:\Users\anton\source\repos\DibujarGraficos\DibujarGraficos\Debug\DibujarGraficos.MyForm2.resources
